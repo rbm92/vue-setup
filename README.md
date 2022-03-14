@@ -1,19 +1,20 @@
-# vue-setup
+# Project Name
+vue-setup
 
-## Project setup
-```
-npm install
-```
+## Author
+Ricard Bargalló
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Creating a Vue new project
+Including Router and excluding EsLint
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Creating a Vue component
+Header & Footer
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Showing data from a JS file
+Some random text
+
+### Bonus 1: Hello World function
+Creates an alert window
+
+### Bonus 2: Creating 2 routes
+Home and About

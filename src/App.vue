@@ -1,32 +1,43 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <Header />
+    <p>
+      JAVASCRIPT TEXT: <span class="red">{{ text }}</span>
+    </p>
+    <p>
+      <button @click="hello">Say Hello</button>
+    </p>
+    <router-link to="/">Home</router-link><br><br>
+    <router-link to="about">About</router-link>
+    <router-view />
+    <Footer />
   </div>
 </template>
 
+<script>
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+
+export default {
+  components: {
+    Header,
+    Footer,
+  },
+  data() {
+    return {
+      text: "This is some text",
+    };
+  },
+  methods: {
+    hello() {
+      alert("Hello World!");
+    },
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.red {
+  color: red;
 }
 </style>
